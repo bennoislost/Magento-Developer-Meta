@@ -1,0 +1,7 @@
+#
+# Project excludes
+#
+vendor
+composer.lock
+src
+bin

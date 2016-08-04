@@ -1,0 +1,52 @@
+{
+    "name": "bennoislost/magento-developer-meta",
+    "description": "Tooling for Magento development",
+    "keywords": ["magento", "debug", "tools"],
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben McManus"
+        }
+    ],
+    "require": {
+        "aoepeople/aoe_templatehints": "^0.4.3",
+        "aoepeople/aoe_profiler": "^0.3.0",
+        "madalinoprea/magneto-debug": "^1.8.1"
+    },
+    "require-dev": {
+        "magento/core": "1.9.2.3",
+        "aydin-hassan/magento-core-composer-installer" : "~1.0",
+        "magento-hackathon/magento-composer-installer": "^3.0.5"
+    },
+    "autoload": {
+        "psr-0": {
+            "": [
+                "src/magento/app",
+                "src/magento/app/code/local",
+                "src/magento/app/code/community",
+                "src/magento/app/code/core",
+                "src/magento/lib"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.firegento.com"
+        }
+    ],
+    "extra": {
+        "magento-root-dir": "src/magento",
+        "with-bootstrap-patch": false,
+        "magento-core-deploy" : {
+            "excludes": [
+                ".htaccess"
+            ],
+            "git-ignore-append": false
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
