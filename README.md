@@ -44,14 +44,7 @@ composer.phar require bennoislost/magento-developer-meta
 Some packages may require you to add the "Firegento" repository to your projects `composer.json`
 
 ```
-{
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.firegento.com"
-        }
-    ]
-}
+composer.phar config repositories.firegento composer https://packages.firegento.com
 ```
 
 See [https://github.com/Cotya/magento-composer-installer](https://github.com/Cotya/magento-composer-installer) for common installation problems.
