@@ -11,7 +11,6 @@
     ],
     "require": {
         "aoepeople/aoe_templatehints": "^0.4.3",
-        "aoepeople/aoe_profiler": "^0.3.0",
         "madalinoprea/magneto-debug": "^1.8.1"
     },
     "require-dev": {
